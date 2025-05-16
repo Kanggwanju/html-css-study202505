@@ -26,6 +26,7 @@
     <label for="email">이메일: </label>
     <input id="email" type="email">
 
+
     <br>
     취미:
     <input id="sports" type="checkbox" name="hobbies">
@@ -66,17 +67,20 @@
     <input id="ti" type="time">
 
     <br>
-
-    <input type="datetime-local">
+    <label for="data">날짜, 시간</label>
+    <input id="data" type="datetime-local">
     
     <br>
     <input type="file" multiple accept="image/*">
-    <br>
-    <textarea rows="5" cols="10"></textarea>
 
     <br>
+    <label for="txt">자유폼</label>
+    <br>
+    <textarea id="txt" rows="5" cols="10"></textarea>
 
-    <select name="coffee">
+    <br>
+    <label for="coffee">주문</label>
+    <select id="coffee" name="coffee">
         <option value="americano">아메리카노</option>
         <option value="cafe-latte" selected>카페라떼</option>
         <option value="vanilla-latte" disabled>바닐라라떼 (품절)</option>
