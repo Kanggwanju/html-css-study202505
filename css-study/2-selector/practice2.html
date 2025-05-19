@@ -8,6 +8,33 @@
     <title>Document</title>
 
     <style>
+        #list li:nth-child(2n+1) {
+            background: yellow;
+        }
+        #list li:nth-child(2n) {
+            background: gray;
+        }
+        #list li:first-child {
+            color: red;
+        }
+        #list li:last-child {
+            color: green;
+        }
+        #list li:nth-child(2) {
+            font-style: italic;
+        }
+        #list li:nth-child(-n + 2) {
+            /*
+               n = 0  ->  2
+               n = 1  ->  1
+               n = 2  ->  0
+            */
+            border: 2px dotted aqua;
+        }
+        #list li:nth-child(n + 3) {
+            border: 2px dashed violet;
+        }
+
         /*
         1. id="list"인 요소에 <li> 요소중
               홀수번째 요소만 선택후 배경색상 yellow 적용
