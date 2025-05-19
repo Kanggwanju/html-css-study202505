@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+  <style>
+    /* 인접 형제 선택자 */
+
+    /* li 태그면서, 위에 있는(형) 태그의 클래스가 오렌지 */
+    /* 사과, 자몽 */
+    .orange + li {
+        background: orangered;
+    }
+
+    /* 첫 li를 제외하고 다른 모든 li */
+    li + li {
+        font-size: 10px;
+    }
+
+    /* 형중에 클래스가 red가 있다면 그 아래의 li */
+    .red ~ li {
+        background: violet;
+    }
+    /* 그룹 선택자 */
+    h1, h2, h3 {
+        color: dodgerblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>hello1</h1>
+  <h2>hello2</h2>
+  <h3>hello3</h3>
+
+
+
+  <ul>
+    <li class="orange">어뤠인지</li>
+    <li>사과</li>
+    <li>딸기</li>
+    <li class="orange">오렌지</li>
+    <li class="red">자몽</li>
+    <li>포도</li>
+    <li>레몬</li>
+  </ul>
+
+  <table>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+  </table>
+
+</body>
+</html>
