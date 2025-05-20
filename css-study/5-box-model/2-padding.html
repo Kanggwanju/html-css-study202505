@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            /* 전체 선택자: 모든태그에게 스타일을 적용 */
+            /* 까먹는 경우가 대다수 이므로 전체 선택자를 통해 처리*/
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* 패딩을 사용한 만큼 가로 세로를 빼줘야
+             이전의 크기를 유지할 수 있음 */
+            width: 470px;
+            height: 460px;
+            background: orange;
+            margin: 100px;
+
+            /* 패딩을 사용하면 박스의 크기가 패딩만큼 커짐*/
+            padding-top: 40px;
+            padding-left: 30px;
+
+            /* 패딩 또는 보더 속성으로 인해 박스가 커지는걸 방지 */
+            box-sizing: border-box;
+        }
+        .box {
+            /*width: 100%;*/
+
+            height: 50%;
+            background: tomato;
+            font-size: 2rem;
+            color: #fff;
+            padding: 20px;
+        }
+        p.text1{
+            border: 3px solid blue;
+            width: 50%;
+            margin: 20px auto;
+            font-size: 1.5rem;
+            padding: 25px;
+            text-align: justify;
+            line-height: 1.4;
+        }
+        .card {
+            width: 250px;
+            height: 350px;
+            border: 2px solid gray;
+            margin: 70px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .card .image {
+            width: 100%;
+            height: 250px;
+            border: 2px solid lightgray;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card .image img {
+            /*width: 100%;*/
+            height: 100%;
+
+        }
+        .card .text {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="data:image/jpeg;base64,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" alt="하치와레">
+        </div>
+        <p class="text">
+            나 하치와레야~
+        </p>
+    </div>
+
+    <p class="text1">
+        대법원장의 임기는 6년으로 하며, 중임할 수 없다. 근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다. 선거에 있어서 최고득표자가 2인 이상인 때에는 국회의 재적의원 과반수가 출석한 공개회의에서 다수표를 얻은 자를 당선자로 한다. 이 헌법은 1988년 2월 25일부터 시행한다. 다만, 이 헌법을 시행하기 위하여 필요한 법률의 제정·개정과 이 헌법에 의한 대통령 및 국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행 전에 할 수 있다.
+
+        모든 국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 통신·방송의 시설기준과 신문의 기능을 보장하기 위하여 필요한 사항은 법률로 정한다. 정기회의 회기는 100일을, 임시회의 회기는 30일을 초과할 수 없다. 군인·군무원·경찰공무원 기타 법률이 정하는 자가 전투·훈련등 직무집행과 관련하여 받은 손해에 대하여는 법률이 정하는 보상외에 국가 또는 공공단체에 공무원의 직무상 불법행위로 인한 배상은 청구할 수 없다.
+    </p>
+
+    <div class="container">
+        <div class="box">안녕안녕</div>
+    </div>
+</body>
+</html>
