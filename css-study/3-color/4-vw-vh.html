@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .box {
+            background: tomato;
+            /* 부모 대비 100%, 바디가 화면 전체이기 떄문에 */
+            /* 박스도 화면 전체로 보임, 화면을 꽉 채운다는 */
+            /* 개념이 아니다. width는 자동으로 100%로 설정됨.*/
+            width: 100%;
+            height: 50vh;
+        }
+        .item {
+            background: aqua;
+            width: 100vw;
+            height: 25vh;
+            opacity: 0.6;
+        }
+        /*body {*/
+        /*    width: 30%;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item"></div>
+    </div>
+</body>
+</html>
