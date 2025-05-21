@@ -1,24 +1,35 @@
 @import url("common.css");
-
-nav {
-    background-color: #bebbbb;
-    width: 500px;
-    margin: 10px auto;
-}
-ul {
-    padding: 20px 0 20px 20px;
-}
-li {
-    margin: 26px 0;
-    padding: 10px 0;
-}
 a {
-    color: #fff;
-    font-size: 20px;
+    /* a태그 리셋 */
+    color: inherit;
     text-decoration: none;
-    padding: 10px 5px;
 }
-a:hover {
-    color: #eaea6b;
-    background-color: #87ceeb;
+
+.board {
+    background: gray;
+    width: 70%;
+    margin: 20px auto;
+    font-size: 3em;
+    color: #fff;
+    padding: 15px;
+}
+.board li {
+    /*border: 4px solid yellow;*/
+
+    /* 각 요소들의 거리를 벌릴 때 margin */
+    margin-bottom: 15px;
+}
+.board li:last-child {
+    /* 제일 아래쪽은 .board의 패딩, li의 마진
+     이 합쳐져서 더 넓어지므로 빼줌*/
+    margin-bottom: 0;
+}
+.board li a {
+    /* 인라인 속성이라 a태그의 눌리는 부분이 작음 */
+    display: block;
+    /*background: red;*/
+}
+.board li a:hover {
+    color: yellow;
+    background: skyblue;
 }
