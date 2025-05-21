@@ -1,0 +1,41 @@
+@import url("common.css");
+
+section {
+    width: 550px;
+    border-style: double;
+    border-width: 3px;
+    border-color: #123456;
+    margin: 10px auto;
+}
+h1.title {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 3px solid;
+    background: #abcdef;
+    letter-spacing: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+div.content1 {
+    height: 56px;
+    border-bottom: 1px dashed #000;
+    padding: 12px 0 8px 10px;
+}
+div.content1 h2 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+div.content2 {
+    height: 56px;
+    padding: 12px 0 8px 10px;
+}
+div.content2 h2 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 7px;
+}
