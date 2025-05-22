@@ -9,43 +9,45 @@
     <link rel="stylesheet" href="../5-box-model/common.css">
     <style>
         .container {
-            width: 80%;
-            height: 500px;
-            background: #efd3d7;
-            padding: 18px;
-            margin: 20px auto;
-            border: 6px solid #c08484;
-            display: flex;
-            flex-wrap: wrap;
+            width: 40%;
+            background: pink;
+            margin: 50px auto;
+            border: 5px solid #caa;
+            padding: 20px;
         }
-        .main_title {
-            font-size: 40px;
-            font-weight: bold;
+        .container .main-title {
+            font-size: 1.5em;
+            font-weight: 700;
             text-align: center;
-            margin: 20px auto;
-            /*background: red;*/
+            margin-bottom: 20px;
         }
-        .bottom {
-            /*background: green;*/
+        .container .bottom {
+            /*border: 3px solid red;*/
             display: flex;
             justify-content: space-between;
         }
-        section div p {
+        .container .bottom p {
+            /*border: 3px dashed green;*/
             width: 45%;
             padding: 15px;
-            font-size: 31px;
+            line-height: 1.4;
+            font-size: 1.2em;
+            text-indent: 7px;
+            text-align: justify;
         }
-        .green {
-            background: #eef59a;
+        .container .bottom .green {
+            background: #dda;
         }
-        .coffee{
-            background: #B39B7B;
+        .container .bottom .coffee {
+            background: #ba7;
         }
+
     </style>
 </head>
 <body>
+    <!--    section.container>h1.main-title+(div.bottom>p.green+p.coffee)-->
     <section class="container">
-        <h1 class="main_title">녹차와 커피</h1>
+        <h1 class="main-title">녹차와 커피</h1>
         <div class="bottom">
             <p class="green">
                 녹차는 은은한 향을 좋아하는 사람들이 애용하는 차이다. 녹차를 마실 줄 모르는 사람들은
