@@ -8,7 +8,8 @@ body {
 
 /* header style */
 header {
-    background: tomato;
+    /*background: tomato;*/
+    /*border: 4px solid green;*/
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -73,7 +74,8 @@ header .gnb.on {
 header .gnb .close {
     /*border: 3px solid yellow;*/
     color: #fff;
-    /* flex-direction: row-reverse;으로도 표현 가능 */
+    /* flex-direction: row-reverse;로
+    표현 가능 */
     /*order:1;*/
 }
 header .gnb ul {
@@ -88,3 +90,67 @@ header .gnb ul li {
 header .gnb ul li:hover {
     color: #fff;
 }
+
+/* section visual style */
+section.visual {
+    background: url("https://i.namu.wiki/i/RtdS1ABpf1-whE8QqStVpLpNvKGa71BNHE0Emo_LEjapUu38lFuBZDcd7yzxdJhDfiTHYpns9XZCmwMBlZHKEg.webp")
+                no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+section.visual .overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+
+    /*바뀌는건 없지만 안정적으로 만들음*/
+    left: 0;
+    top: 0;
+}
+section.visual .txt {
+    /*background: red;*/
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10%;
+    text-shadow: 3px 3px 5px #000;
+    z-index: 20;
+}
+section.visual .txt h3 {
+    margin: 30px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
