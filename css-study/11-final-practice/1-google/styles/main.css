@@ -1,0 +1,101 @@
+@import url("common.css");
+
+body {
+    background: rgb(211,209,209, 0.58);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    
+}
+
+/* header */
+header nav{
+    /*background: red;*/
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul {
+    /*background: orange;*/
+    display: flex;
+    margin-top: 20px;
+    color: #7c7979;
+}
+header nav ul li {
+    margin-right: 10px;
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* main */
+main {
+    /*background: darkgreen;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main img {
+    margin-bottom: 20px;
+    width: 18%;
+}
+main .search-bar {
+    /*background: skyblue;*/
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .search-bar input {
+    /*background: yellowgreen;*/
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid #ded9d3;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 10px;
+    /*           x     y   blur color*/
+    box-shadow: 0 1px 1px rgba(128,128,128,0.3);
+}
+main .buttons {
+    width: 18%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px;
+}
+main .buttons button {
+    /*background-color: green;*/
+    border: none;
+    box-shadow: 0 1px 1px rgba(128,128,128,0.3);
+    padding: 10px;
+}
+main .buttons button:last-child {
+    height: 100%;
+}
+
+/* footer */
+footer {
+    /*background: green;*/
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #7c7979;
+}
+footer .footer-left {
+    /*background: aqua;*/
+}
+footer .footer-left a {
+    margin-right: 10px;
+}
+footer .footer-right {
+    /*background: red;*/
+}
+footer .footer-right a {
+    margin-right: 10px;
+}
+footer .footer-right a:last-child {
+    margin-right: 0;
+}
