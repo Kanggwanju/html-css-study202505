@@ -227,6 +227,27 @@ main .project .bottom li {
     overflow: hidden;
     position: relative;
 }
+main .project .bottom li a::before {
+    content: '';
+    /*display: block;*/
+    /*width: 100%;*/
+    width: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    /* absolute가 걸리면 display: block;이 자동으로 걸림,
+     생략 가능해진다.*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*가로 길이를 처음에 0으로 만들었다가, 애니메이션을 통해서*/
+    /*100%로 만든다.*/
+
+    /* 트랜지션은 하버에 걸면 안되고, 원본에 걸어야 함. */
+    transition: 0.7s;
+}
+main .project .bottom li a:hover::before {
+    width: 100%;
+}
 main .project .bottom li a img {
     width: 100%;
 }
