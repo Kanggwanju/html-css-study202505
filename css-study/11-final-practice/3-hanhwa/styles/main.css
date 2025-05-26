@@ -141,8 +141,65 @@ header {
     width: 100%;
 }
 
-
-
+/* section about */
+.about {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+.about .title h2 {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+.about .title p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+.about .title p .mo {
+    display: none;
+}
+.about .sub-container {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    margin: 30px auto;
+    border-bottom: 1px solid #ddd;
+}
+.about .sub-container li {
+    width: 33.3333%;
+}
+.about .sub-container li a .img-box {
+    overflow: hidden;
+}
+.about .sub-container li a .img-box img {
+    transition: transform 0.3s ease;
+}
+.about .sub-container li a:hover .img-box img{
+    transform: scale(1.2);
+}
+.about .sub-container li a .text {
+    padding: 20px;
+}
+.about .sub-container li a .text .mo {
+    display: none;
+}
+.about .sub-container li a .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.about .sub-container li a .text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.about .sub-container li a .text p.more {
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
 
 
