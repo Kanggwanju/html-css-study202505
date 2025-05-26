@@ -326,7 +326,7 @@ main .contact {
     padding: 220px 0;
 }
 main .contact .inner {
-    background: orange;
+    /*background: orange;*/
     width: 70%;
     margin: 0 auto;
     font-size: 19px;
@@ -338,22 +338,34 @@ main .contact .inner .tel {
     margin: 50px 0;
 }
 
+/* footer */
+footer {
+    background: #1b1b1b;
+    color: #999;
+    padding: 0 80px 80px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul li:nth-child(2) {
+    color: #eee;
+    font-size: 16px;
+    line-height: 2;
+}
+footer ul li:nth-child(2) span {
+    font-weight: 700;
+    margin-right: 10px;
+    color: #999;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#go-top {
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+    color: #fff;
+    font-size: 52px;
+}
 
 
