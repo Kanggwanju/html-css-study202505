@@ -3,11 +3,12 @@
 
 /* header */
 header {
-    background: rgba(204,204,204,0.9);
+    background: rgba(0,0,0,0.3);
     height: 100px;
     color: #fff;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
     width: 100%;
 }
@@ -44,6 +45,9 @@ header {
 .inner-header .gnb ul li {
     margin-right: 60px;
 }
+.inner-header .gnb ul li a:hover {
+    color: orange;
+}
 .inner-header .tnb {
     /*background: violet;*/
     width: 30%;
@@ -69,19 +73,73 @@ header {
 .inner-header .tnb ul li .fa-search {
     margin-left: 5px;
 }
-.inner-header .tnb ul li:last-child {
+.inner-header .tnb ul li:last-child a {
+    display: block;
     border: 1px solid #fff;
-    border-radius: 18px;
+    border-radius: 30px;
     padding: 10px;
+}
+.inner-header .tnb ul li:last-child a:hover {
+    color: orange;
+    background: #fff;
 }
 .inner-header .gnb-mobile {
     display: none;
 }
 
 
+/* section main */
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url("https://kokokaki.github.io/img/vis_4.jpg")
+        no-repeat center/cover fixed;
+}
+.main .main-title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .main-title .en {
+    width: 50%;
+    font-size: 52px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 7px #111;
+}
+.main .main-title p {
+    font-size: 24px;
+    color: #fff;
+    margin: 20px 0;
+    text-shadow: 3px 3px 10px #111;
+}
+.main .main-title .view {
+    display: block;
+    font-size: 15px;
+    border: 1px solid #fff;
+    width: 180px;
+    margin: 0 auto;
+    padding: 8px 0;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.main .main-title .view::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
 
-
-
+    transition: 0.7s;
+}
+.main .main-title .view:hover::before {
+    width: 100%;
+}
 
 
 
