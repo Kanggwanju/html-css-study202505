@@ -315,6 +315,29 @@ main .partners ul li img:hover {
     opacity: 1;
 }
 
+/* contact style */
+main .contact {
+    width: 90%;
+    background: url("../img/contact.jpg")
+        no-repeat center/cover fixed;
+    /* height를 설정하고 추후에 세로 정렬을 할
+     수 있겠지만, 패딩만 지정하면 세로 정렬이
+     자동 정렬된다.*/
+    padding: 220px 0;
+}
+main .contact .inner {
+    background: orange;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.4;
+}
+main .contact .inner .tel {
+    font-size: 58px;
+    font-weight: 700;
+    margin: 50px 0;
+}
+
 
 
 
