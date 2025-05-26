@@ -1,0 +1,194 @@
+@import url("common.css");
+
+body {
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+/* header */
+header nav{
+    /*background: red;*/
+    display: flex;
+    /*flex-direction: column;*/
+    /*min-height: 100vh;*/
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid rgba(128,128,128,0.3);
+}
+header nav .logo {
+    /*background: green;*/
+    flex: 1;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+}
+header nav .logo img {
+    height: 100%;
+}
+header nav .search-bar {
+    /*background: blue;*/
+    flex: 3;
+
+}
+header nav .search-bar input {
+    font-size: 16px;
+    font-weight: bold;
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background: rgba(124, 121, 121, 0.3);
+}
+header nav .nav-icons {
+    /*background: skyblue;*/
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+header nav .nav-icons a {
+    margin-right: 20px;
+}
+
+/* main */
+.content-container {
+    background: rgb(211,209,209, 0.58);
+    /*height: 100%;*/
+    display: flex;
+    /*justify-content: space-between;*/
+    padding: 20px 20% 40px;
+    border-bottom: 1px solid rgba(128,128,128,0.3);
+}
+.content-container .left-column {
+    border: 1px solid rgba(128,128,128,0.2);
+    margin-right: 25px;
+}
+.content-container .left-column .post .post-header {
+    /*background: red;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.content-container .left-column .post .post-header img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.content-container .left-column .post .post-actions {
+    /*background: red;*/
+    padding: 10px;
+}
+.content-container .left-column .post .post-actions img {
+    margin-right: 5px;
+}
+.content-container .left-column .post .post-caption {
+    /*background: blue;*/
+    padding: 0 10px 10px 10px;
+    font-size: 14px;
+}
+.content-container .left-column .post .post-caption strong {
+    font-weight: bold;
+}
+.content-container .right-column .profile-info {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    margin-bottom: 20px;
+}
+.content-container .right-column .profile-info img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.content-container .right-column .profile-info strong {
+    font-weight: bold;
+}
+.content-container .right-column .profile-info p {
+    font-size: 16px;
+}
+.content-container .right-column .suggestions {
+    border: 1px solid rgba(128,128,128,0.2);
+    background: #fff;
+    padding: 0 0 0 15px;
+    /*display: flex;*/
+}
+.content-container .right-column .suggestions h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.content-container .right-column .suggestions .suggestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    /*background: red;*/
+}
+.content-container .right-column .suggestions .suggestion img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 15%;
+}
+.content-container .right-column .suggestions .suggestion div {
+    /*background: aqua;*/
+    /*margin-right: 10px;*/
+    width: 60%;
+
+}
+.content-container .right-column .suggestions .suggestion strong {
+    font-weight: bold;
+}
+.content-container .right-column .suggestions .suggestion button {
+    background: dodgerblue;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 16px;
+    position: relative;
+    /*left: -10px;*/
+    width: 25%;
+}
+/* footer */
+footer {
+    padding: 30px 0;
+    /*margin-top: auto;*/
+    height: 20%;
+    background: rgb(211,209,209, 0.58);
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+}
+footer ul li {
+    margin-right: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
